@@ -1,0 +1,63 @@
+body{
+background: dimgray;
+color: ghostwhite;
+font-family: 'Quicksand', serif;
+text-align: center;
+}
+h1{font-size: 200%;}
+#container {
+margin: 5% auto;
+border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
+text-align: center;
+}
+.box{
+display: inline-block;
+border: 1px solid grey;
+width: 100px;
+height: 100px;
+text-align: center;
+box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+padding: 0px;
+}
+span{
+position: absolute;
+font-size: 75px;
+font-family: 'Raleway', sans-serif;
+text-align: center;
+height: 75px;
+width: 75px;
+padding: 0px;
+margin: 5px;
+margin-left: -35px;
+}
+.top{border-top: none;}
+.bottom{border-bottom: none;}
+.left{border-left: none;}
+.right{border-right: none;}
+.alert{
+height: 75px;
+width : 125px;
+display: inline-block;
+background: #111;
+position: relative;
+z-index: 7;
+margin-top: -50%;
+border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px;
+box-shadow: 0 0 75px 2px dimgray;
+animation: larger 0.5s; -webkit-animation: larger 0.5s; -moz-animation: larger 0.5s;
+animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; -moz-animation-fill-mode: forwards;
+box-sizing: content-box; -webkit-box-sizing: content-box; -moz-box-sizing: content-box;
+padding:30px;
+bottom: 50px;
+top: 0px;
+}
+@keyframes larger{ from{height: 75px; width: 125px;} to{height: 100px;width: 250px;}}
+button{
+background: #111;
+border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+color: ghostwhite;
+border: none;
+outline: none;
+}
+button:focus{background: silver;}
+.activeBox{background: silver;}
